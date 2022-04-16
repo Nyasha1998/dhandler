@@ -1,19 +1,37 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import TextTransition, { presets } from "react-text-transition"
 
-const Landingpage = () => {
+import {
+  Container,
+  Blue,
+  Orange,
+  Yellow,
+  Green
+} from './LandingPageStyle.js'
+
+const TEXTS = [
+  "University students are mostly affected by depression",
+  "This is a major effect on their academic excellence",
+  "Whilst depression affects student’s performance",
+  "It also claims lives of the students as it causes suicidal thoughts among them",
+  "It is unlikely that this area of mental health is under-resourced",
+  "And the treatment cannot be afforded and accessed by everyone",
+  "But don't worry we are here to help you, just click on the registration link below."  
+]
+
+const LandingPage = () => {
 
 
   return (
     <Container>
       <Blue>
-        <p>Stress Reliever</p>
+        
       <Orange>
-        <p>Welcoming</p>
+        
         <Yellow>
-          <p>Energizing</p>
+          
           <Green> 
-            <p>Inspire Concentration</p>
+            
           </Green>
         </Yellow>
       </Orange>
@@ -22,53 +40,5 @@ const Landingpage = () => {
   )
 }
 
-export default Landingpage
+export default LandingPage
 
-const example = keyframes`
-  from {background-color: blue;}
-  to {background-color: yellow;}
-`
-const Container = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin: 20px 20px 20px 20px;
-`
-
-const Blue = styled.div`
-  display: flex;
-  width: 100vh;
-  height: 100vh;
-  background-color: #2337ED;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
-
-const Orange = styled.div`
-  display: flex;
-  position: relative;
-  width: 75vh;
-  height: 75vh;
-  background-color: #6BF01E;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
-const Yellow = styled.div`
-  display: flex;
-  position: relative;
-  width: 50vh;
-  height: 50vh;
-  background-color: yellow;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
-const Green = styled.div`
-  display: flex;
-  position: relative;
-  width: 25vh;
-  height: 25vh;
-  background-color: #84BF42;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
