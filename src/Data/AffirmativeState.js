@@ -6,7 +6,8 @@ export const data = [
     {
         statement: 'I have come this far, and I am proud of myself',
         id: '2'
-    },    {
+    },   
+     {
         statement: 'This is just one moment in my life, and it does not define who I am',
         id: '3'
     },
@@ -17,5 +18,9 @@ export const data = [
     {
         statement: 'These are just thoughts. Only I determine the way I choose to feel',
         id: '5'
+    },
+    {
+        statement: 'I am loved and appreciated even when it seems like I’m not',
+        id: '6'
     },
 ]
