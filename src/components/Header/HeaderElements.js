@@ -1,34 +1,54 @@
-import { NavLink as Link } from 'react-router-dom'
-import styled from 'styled-components'
+import styled from 'styled-components' 
 
 export const Container = styled.div`
+  flex: 1;
+  align-self: flex-start;
+  padding: 1rem rem;
+
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 0.25rem;
-  height: 80px;
-  flex-wrap: nowrap;
-  z-index: 10;
-  border-style: inset;
-  border-color: black;
-`
+  justify-content: space-between;
+  align-items: center;
 
-export const NavLink = styled(Link)`
-  display: block;
-  display: inline;
+  background-color: #2337ED;
+
+  font-size: 18px;
   text-decoration: none;
-  padding: 0 1rem;
-  cursor: pointer;
+  color: #fff;
 
-  &.active {
-      color: black;
+  &:hover {
+      color: green;
+      transition: 200ms ease-in;
+  }
+
+  width: 100%;
+
+  @media (max-width: 1000px) {
+      padding: 70px 30px;
   }
 `
-export const NavBtn = styled.div`
+
+export const Logo = styled.div`
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+`
+
+export const Items = styled.div`
+  display: flex;
+  list-style: none;
   
 `
 
-export const NavBtn3 = styled.div`
-  @media screen and (max-width: 760px) {
-      display: none;
-  }
+export const Home = styled.div`
+  padding: 0 1rem;
+  cursor: pointer;
+`
+
+export const Login = styled.div`
+  padding: 0 1rem;
+  cursor: pointer;
+`
+
+export const Logout = styled.div`
+  padding: 0 1rem;
+  cursor: pointer;
 `

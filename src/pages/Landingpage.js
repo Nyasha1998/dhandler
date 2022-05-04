@@ -4,6 +4,7 @@ import {Container,
   Button, 
   Text, 
   Affirmations,
+  AnnimationBackground,
   Circle,
   Paragraph} from './LandingPageStyle.js'
 
@@ -28,7 +29,7 @@ const LandingPage = () => {
   useEffect(() => {
     const intervalId = setInterval(() =>
       setIndex(index => index + 1),
-      5000 // every 3 seconds
+      3000 // every 3 seconds
     ); 
     return () => clearTimeout(intervalId);
   }, []);
@@ -43,6 +44,7 @@ const LandingPage = () => {
       />
       </Text>
       <Button>Register for Free</Button>
+      <AnnimationBackground>
       <Affirmations>
         <Circle><Paragraph><p>I am not afraid to keep going, and I believe in myself</p></Paragraph></Circle>
         <Circle><Paragraph><p>I have come this far, and I am proud of myself</p></Paragraph></Circle>
@@ -51,6 +53,7 @@ const LandingPage = () => {
         <Circle><Paragraph><p>These are just thoughts. Only I determine the way I choose to feel</p></Paragraph></Circle>
         <Circle><Paragraph><p>I am loved and appreciated even when it seems like I’m not</p></Paragraph></Circle>
       </Affirmations>
+      </AnnimationBackground>
     </Container>
   )
 }

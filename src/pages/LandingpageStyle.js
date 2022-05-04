@@ -1,16 +1,20 @@
 import styled, { keyframes } from 'styled-components'
 
-export const example = keyframes`
-  from {background-color: blue;}
-  to {background-color: yellow;}
+export const colors = keyframes`
+  0% {background-color: #ffffff;}
+  25% {background-color: yellow;}
+  50% {background-color:  #6BF01E;}
+  75% {background-color: green;}
+  100% {background-color: #2337ED;}
 `
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-   
+  width: 100%;
 `
 export const Button = styled.div`
-  margin-top: 50px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   font-family: 'Orbitron', sans-serif;
   font-size: 30px;
   width: 20rem;
@@ -18,25 +22,35 @@ export const Button = styled.div`
   border-style: solid;
   border-radius: 20px;
   padding: 5px 3px 5px 7px;
+  color: #84BF42;
+  background-color: #2337ED;
 `
 
 export const Text = styled.div`
-  margin: 10rem 5rem 1rem 5rem;
+  margin: 5rem 5rem 1rem 5rem;
   display: flex;
   justify-content: center;
   font-size: 40px;
   font-family: 'Permanent Marker', cursive;
+  color: #84BF42;
+  text-shadow: #2337ED 0.2px 2px 3px;
 `
 
 export const Affirmations = styled.div`
+  width: 100vh;
   font-family: 'Source CodePro', monospace;
-  margin: 2rem 10rem 2rem 20rem;
+  margin: 2rem 10rem 2rem 23rem;
   display: grid;  
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  grid-row-gap: 2rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 `
 
+export const AnnimationBackground = styled.div`
+  width: 100%;
+  animation: ${colors} 10s linear infinite;
+`
 
 export const Circle = styled.div`
   width: 200px;
@@ -55,42 +69,3 @@ export const Paragraph = styled.p`
  
 `
 
-export const Blue = styled.div`
-  display: flex;
-  width: 100vh;
-  height: 100vh;
-  background-color: #2337ED;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
-
-export const Orange = styled.div`
-  display: flex;
-  position: relative;
-  width: 75vh;
-  
-  margin: 20px 20px 20px 20px;
-  background-color: #6BF01E;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
-export const Yellow = styled.div`
-  display: flex;
-  position: relative;
-  width: 50vh;
- 
-  margin: 20px 20px 20px 20px;
-  background-color: yellow;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
-export const Green = styled.div`
-  display: flex;
-  position: relative;
-  width: 25vh;
-  
-  margin: 20px 20px 20px 20px;
-  background-color: #84BF42;
-  animation-name: ${example};
-  animation-duration: 3s;
-`
