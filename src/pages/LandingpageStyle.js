@@ -22,7 +22,7 @@ export const Button = styled.div`
   border-style: solid;
   border-radius: 20px;
   padding: 5px 3px 5px 7px;
-  color: #84BF42;
+  color: #ffffff;
   background-color: #2337ED;
 `
 
@@ -31,14 +31,14 @@ export const Text = styled.div`
   display: flex;
   justify-content: center;
   font-size: 40px;
-  font-family: 'Permanent Marker', cursive;
-  color: #84BF42;
-  text-shadow: #2337ED 0.2px 2px 3px;
+  font-family: 'Orbitron', sans-serif;
+  color: #2337ED;
+  text-shadow: #ffffff 0.2px 2px 3px;
 `
 
 export const Affirmations = styled.div`
   width: 100vh;
-  font-family: 'Source CodePro', monospace;
+    ;
   margin: 2rem 10rem 2rem 23rem;
   display: grid;  
   grid-template-columns: auto auto auto;
@@ -60,7 +60,7 @@ export const Circle = styled.div`
   margin: 25px 5px 10px 15pxs;
 `
 export const Paragraph = styled.p`
-  color: #84BF42;
+  color: #ffffff;
   display: flex;
   align-items: center;
   margin-top: 60px;
