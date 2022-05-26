@@ -1,8 +1,8 @@
 import React from 'react'
 import {data, feedbackMessage, callService} from '../../Data/MonitoringData'
 import SingleTip from './SingleTip'
-import {Cards, Feedback  } from './MonitoringTipsStyle'
-
+import {Cards, Feedback, CallIcon, FeedbackContainer  } from './MonitoringTipsStyle'
+import { AiTwotonePhone } from "react-icons/ai";
 
 const MonitoringTips = () => {
 
@@ -19,8 +19,11 @@ const MonitoringTips = () => {
               )
           })}
         </Cards>
-       <Feedback>{callService}: icon</Feedback>
-      </>
+        <FeedbackContainer>
+        <Feedback>{callService}:</Feedback>
+        <CallIcon><AiTwotonePhone/></CallIcon>
+        </FeedbackContainer>
+       </>
     )
 }
 

@@ -8,7 +8,19 @@ export const Feedback = styled.div`
   font-size: 30px;
   margin: 2rem 5rem 2rem 5rem;
   
-`
+`;
+
+export const CallIcon = styled.div`
+  
+  
+  
+`;
+
+export const FeedbackContainer = styled.div`
+  display: flex;
+  
+  flex-direction: start;
+`;
 
 export const Cards = styled.div`  
  display: grid;
