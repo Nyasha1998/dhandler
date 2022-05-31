@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 50vh;
-  width: 100vh;
+  background-color: #00888B;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
