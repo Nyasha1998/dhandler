@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Dropdown, Option } from './Dropdown';
+import { Container } from './DropdownStyle'
 
 const Questions = () => {
 
@@ -9,9 +10,11 @@ const Questions = () => {
     setOptionValue(e.target.value);
   };
 
+
+
   return (
-    <div>
-       <p>Hie, I would like you to answer the following questions by selecting a number on a scale 0 - 3, please answer with honest so that I may help you.</p>
+    <Container>
+       <p>Hie, I would like you to answer the following questions by selecting a number on a scale 0 - 3, please answer with honest so that I may help you : </p>
       <Dropdown
         formLabel1="Do you have moments where you: Could not experience the positive feeling?"
         formLabel2="Do you have moments where you: Could not work up the initiative to do things?"
@@ -24,14 +27,14 @@ const Questions = () => {
         onChange={handleSelect}
         action="/"
       >
-        <Option selected value="Click to see options" />
+        <Option selected value="Select score" />
         <Option value="0" />
         <Option value="1" />
         <Option value="2" />
         <Option value="3" />
       </Dropdown>
-      <p>You selected {optionValue} </p>
-    </div>
+
+    </Container>
   )
 }
 

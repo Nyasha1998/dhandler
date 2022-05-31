@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button'
 import ModalDialog from './ModalDialog'
 import styled from 'styled-components'
 
-const Login = () => {
+const Signup = () => {
     const [open, setOpen] = useState(false)
 
     //function to handle modal open
@@ -20,7 +20,7 @@ const Login = () => {
     return (
         <Style>
             <Button variant="contained" color="primary" onClick={handleOpen}>
-                Login
+                Signup
             </Button>
             {/*display the modal and pass props*/}
             <ModalDialog open={open} handleClose={handleClose} />
@@ -36,4 +36,4 @@ const Style = styled.div`
   color: #00888B;
 `
 
-export default Login
+export default Signup

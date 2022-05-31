@@ -5,7 +5,7 @@ export const colors = keyframes`
   25% {background-color: yellow;}
   50% {background-color:  #6BF01E;}
   75% {background-color: green;}
-  100% {background-color: #2337ED;}
+  100% {background-color: #00888B;}
 `
 export const Container = styled.div`
   display: flex;
@@ -15,15 +15,30 @@ export const Container = styled.div`
 export const Button = styled.div`
   margin-top: 5rem;
   margin-bottom: 5rem;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  width: 20rem;
-  margin-left: 695px;
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  margin-left: 10rem;
   border-style: solid;
   border-radius: 20px;
-  padding: 5px 3px 5px 7px;
+
   color: #ffffff;
-  background-color: #2337ED;
+  background-color:  #00888B;
+  cursor: pointer;
+  
+  &:hover {
+    color: blue;
+    transition: 200ms ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  font-size: 20px;
+  width: 12rem;
+}
+
+  
 `
 
 export const Text = styled.div`
@@ -31,41 +46,24 @@ export const Text = styled.div`
   display: flex;
   justify-content: center;
   font-size: 40px;
-  font-family: 'Orbitron', sans-serif;
-  color: #2337ED;
+  font-family: 'Montserrat', sans-serif;
+  color: #00888B;
   text-shadow: #ffffff 0.2px 2px 3px;
+
+  @media-screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `
 
-export const Affirmations = styled.div`
-  width: 100vh;
-    ;
-  margin: 2rem 10rem 2rem 23rem;
-  display: grid;  
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
-`
 
 export const AnnimationBackground = styled.div`
   width: 100%;
   animation: ${colors} 10s linear infinite;
-`
+`;
 
-export const Circle = styled.div`
-  width: 200px;
-  height: 200px;
-  background-color: #2337ED;
-  border-radius: 100px;
-  margin: 25px 5px 10px 15pxs;
-`
-export const Paragraph = styled.p`
-  color: #ffffff;
+
+export const Upper = styled.div`
   display: flex;
-  align-items: center;
-  margin-top: 60px;
-  margin-left: 20px;
-  font-weight: bold;
- 
-`
+  flex-direction: column;
 
+`;

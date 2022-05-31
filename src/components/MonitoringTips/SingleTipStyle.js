@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const SingleCard = styled.div`
-  background-color: #2337ED;
-  font-family: 'Orbitron', sans-serif;
-  opacity: 90%;
+  background-color: #00888B;
+  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   color: #ffffff;
   border-radius: 0.5rem;

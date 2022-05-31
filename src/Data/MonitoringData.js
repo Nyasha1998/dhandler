@@ -35,9 +35,11 @@ export const data = [
 
 ]
 
-export const feedbackMessage = 'Hey there, after doing my analysis based on what you have given me, I think the following techniques will help you to get better :'
+export const feedbackMessage = 'Hey there, after doing my analysis based on what you have given me, I am very much positive that the following techniques will help you to get better :'
 
 export const callService = 'Further help, call'
+
+export const negativeFeedbackMessage = 'Hey there, after doing my analysis basing on your response, I think there is nothing wrong with you, but you can always talk to someone on the following call:'
 
 export const other = [
     {

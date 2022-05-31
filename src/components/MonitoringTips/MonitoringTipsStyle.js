@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Feedback = styled.div`
   display: flex;
   flex-direction: center;
-  font-family: 'Source CodePro', monospace;
-  color: #2337ED;
+  font-family: 'Montserrat', sans-serif;
+  color: #00888B;
   font-size: 30px;
   margin: 2rem 5rem 2rem 5rem;
   
@@ -12,13 +12,19 @@ export const Feedback = styled.div`
 
 export const CallIcon = styled.div`
   
-  
-  
+  display: flex;
+  margin-top: 2.3rem;
+  margin-left: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #00888B;
 `;
 
 export const FeedbackContainer = styled.div`
   display: flex;
-  
+  justify-content: no-space;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
   flex-direction: start;
 `;
 

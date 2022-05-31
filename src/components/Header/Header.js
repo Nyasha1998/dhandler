@@ -1,11 +1,11 @@
 import React from 'react'
+import Signup from '../../forms/signup/Signup';
+import Login from '../../forms/login/Login';
 
 import { Container,
      Logo,
       Items,
-       Home,
-        Login,
-         Logout } from './HeaderElements'
+       NavLink, } from './HeaderElements'
 
 const Header = () => {
 
@@ -15,9 +15,9 @@ const Header = () => {
      <Container>
          <Logo>DHandler</Logo>
          <Items>
-             <Home>Home</Home>      
-             <Login>Login</Login>
-             <Logout>Logout</Logout>
+             <NavLink to='/' activeStyle>Home</NavLink>      
+             <NavLink to='/login'><Login/></NavLink>
+             <NavLink to='/signup'><Signup/></NavLink>
          </Items>
      </Container>
     </>

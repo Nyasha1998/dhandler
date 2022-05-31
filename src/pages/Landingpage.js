@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import TextTransition, { presets } from "react-text-transition"
+import Affirmations from '../components/Affirmations/Affirmations'
+import Signup from '../forms/signup/Signup'
 import {Container, 
   Button, 
-  Text, 
-  Affirmations,
+  Text,
+  Upper,
   AnnimationBackground,
-  Circle,
-  Paragraph} from './LandingPageStyle.js'
+  } from './LandingPageStyle.js'
 
 const TEXTS = [
   "University students are mostly affected by depression",
@@ -30,7 +31,7 @@ const LandingPage = () => {
     const intervalId = setInterval(() =>
       setIndex(index => index + 1),
       3000 // every 3 seconds
-    ); 
+    );  
     return () => clearTimeout(intervalId);
   }, []);
 
@@ -38,21 +39,17 @@ const LandingPage = () => {
 
   return (
      <Container> 
+      <Upper>
       <Text><TextTransition
       text={ TEXTS[index % TEXTS.length] }
       springConfig={ presets.slow }
       />
       </Text>
-      <Button>Register for Free</Button>
+      <Button onClick={Signup}>Register for Free</Button>
+      </Upper>
+      
       <AnnimationBackground>
-      <Affirmations>
-        <Circle><Paragraph><p>I am not afraid to keep going, and I believe in myself</p></Paragraph></Circle>
-        <Circle><Paragraph><p>I have come this far, and I am proud of myself</p></Paragraph></Circle>
-        <Circle><Paragraph><p>This is just one moment in my life, and it does not define who I am</p></Paragraph></Circle>
-        <Circle><Paragraph><p>This is one isolated moment, not my entire life. Things will get better</p></Paragraph></Circle>
-        <Circle><Paragraph><p>These are just thoughts. Only I determine the way I choose to feel</p></Paragraph></Circle>
-        <Circle><Paragraph><p>I am loved and appreciated even when it seems like I’m not</p></Paragraph></Circle>
-      </Affirmations>
+      <Affirmations />
       </AnnimationBackground>
     </Container>
   )
